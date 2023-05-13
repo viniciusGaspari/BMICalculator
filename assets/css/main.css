@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700;900&display=swap');
+
+/*font-family: 'Poppins', sans-serif;*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #18181b;
+}
+
+#container {
+    min-height: 100vh;
+    width: 100%;
+}
+
+picture img {
+    width: 900px;
+}
+
+#content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    justify-content: space-evenly;
+}
+
+#title{
+    width: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    font-weight: 600;
+    font-size: 30px;
+    color: white;
+}
+
+#input {
+    background-color: #262626;
+    height: 550px;
+    width: 370px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.categ {
+    color: white;
+    font-size: 15px;
+}
+
+.input-label {
+    background-color: #3f3f46;
+    padding: 0.5rem;
+    margin-bottom: 1.0rem;
+    border-radius: 5px;
+    color: #ccc;
+    width: 320px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input-label i {
+    margin-right: 5px;
+    color: #ccc;
+}
+
+.input-label input {
+    background-color: transparent;
+    outline: border;
+    border: none;
+    width: 250px;
+    padding: 0.5rem;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+
+.input-label input:focus {
+    outline: none;
+}
+
+#btn {
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+
+#btn button {
+    width: 320px;
+    padding: 0.5rem;
+    background-color: rgba(255, 0, 0, 0.658);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#btn button:disabled {
+    opacity: .4;
+    cursor: pointer;
+}
+
+#link {
+    border-top: 2px solid #3f3f46;
+    width: 320px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+#linkIMC {
+    margin-top: 19px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+}
+
+#linkIMC a{
+    text-decoration: none;
+    color: #00ff88;
+}
+
+#resultJS {
+    color: white;
+}
+
+@media screen and (max-width: 1650px) {
+    picture img {
+        width: 800px;
+    }
+    #input {
+        width: 370px;
+        height: 500px;
+    }
+    #title div {
+        font-size: 22px;
+    }
+    .input-label input {
+        width: 250px;
+        padding: 0.1rem;
+    }
+    #link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 1330px){
+    picture img {
+        width: 780px;
+    }
+    #content {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    #input {
+        width: 370px;
+        height: 490px;
+    }
+}
+@media screen and (max-width: 1160px){
+    picture img {
+        display: none;
+    }
+    #title {
+        margin-top: 10px;
+    }
+    #content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #input {
+        width: 370px;
+        height: 520px;
+    }
+}
+

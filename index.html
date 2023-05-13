@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- LINK DOS ÍCONES DOS INPUTS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- LINK DO CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/ModalWindow.css">
+    <!-- LINKS DO JS -->
+    <script src="assets/js/ModalWindow.js" defer></script>
+    <script src="assets/js/script.js" defer></script>
+    <!-- TÍTULO -->
+    <title>Calculadora - IMC</title>
+</head>
+
+<body>
+    <div class="modalWindow" id="modalWindow">
+        <div id="contentModalWindow">
+            <div id="btnX">
+                <button onclick="closeModalWindow()">X</button>
+            </div>
+            <div class="title">
+                <h1><span id="nameJS"></span>, seu resultado está pronto!</h1>
+            </div>
+
+            <div id="result">
+                <div id="yourIMC">
+                    <span id="resultJS"></span>
+                    <div>seu IMC</div>
+                </div>
+            </div>
+
+            <div id="text">
+                <span id="imcText"></span>
+            </div>
+            
+            <div id="IMCDetails">
+                <ul>
+                    <li><span>Abaixo do peso:</span> IMC menor que 18,5</li>
+                    <li><span>Peso normal ou ideal:</span> IMC entre 18,5 e 24,9</li>
+                    <li><span>Sobrepeso:</span> IMC entre 25 e 29,9</li>
+                    <li><span>Obesidade:</span> IMC igual ou superior a 30</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+<main id="container">
+    <div id="content">
+        <picture>
+            <img src="assets/img/undraw_fitness_stats_sht6.svg" alt="">
+        </picture>
+        <div id="input">
+            <div id="title">
+                <div>Calculadora - IMC</div>
+            </div>
+            <div class="categ">seu nome
+                <div class="input-label">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" name="name" id="name" class="name" />
+                    <label for="name">id</label>
+                </div>
+            </div>
+            <div class="categ">sua altura
+                <div class="input-label">
+                    <i class="fa-solid fa-ruler"></i>
+                    <input type="number" name="height" id="height" class="maxHeight" onchange="toggleButton()" />
+                    <label for="height">cm</label>
+                </div>
+            </div>
+            <div class="categ">seu peso
+                <div class="input-label">
+                    <i class="fa-solid fa-weight-hanging"></i>
+                    <input type="number" name="weight" id="weight" class="maxWeight" onchange="toggleButton()" />
+                    <label for="weight">kg</label>
+                </div>
+            </div>
+            <div id="btn">
+                <button disabled onclick="openModalWindow(); CalcIMC();" id="btnCalc">Calcular</button>
+            </div>
+
+            <div id="link">
+                <div id="linkIMC">
+                    <a href="https://www.souenfermagem.com.br/saude-e-bem-estar/tudo-sobre-imc/#:~:text=O%20IMC%20%C3%A9%20calculado%20dividindo,ideal%2C%20com%20sobrepeso%20ou%20obesa" target="blank_">
+                    Mais informações sobre o IMC
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+</body>
+</html>
