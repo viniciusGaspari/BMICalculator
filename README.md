@@ -1,6 +1,6 @@
 Hello, dev 👋🏻
 
-This is my first project using front-end language as HTML5, CSS3 AND JAVASCRIPT
+This is my first project using front-end language using HTML5, CSS3 AND JAVASCRIPT
 
 This is a simply BMI Calculator for all genders.
 
